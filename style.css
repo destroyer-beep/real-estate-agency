@@ -27,6 +27,7 @@
 	--color-cobalt: rgb(33, 40, 67);
 	--color-white: rgb(255, 255, 255);
 	--color-blue: rgb(6, 65, 107);
+	--color-green: rgb(91, 173, 132);
 }
 
 * {
@@ -40,7 +41,6 @@
 main {
 	max-width: 1200px;
 	width: 100%;
-	background-color: white;
 	margin: 0 auto;
 }
 
@@ -61,6 +61,7 @@ main {
 	text-align: center;
 	border: 1px solid var(--color-blue);
 	text-transform: uppercase;
+	margin-left: 10px;
 }
 
 .item-section-nav:nth-child(2) {
@@ -75,6 +76,7 @@ main {
 	color: rgb(91, 173, 132);
 	padding-right: 20px;
 	padding-left: 20px;
+	margin-right: 10px;
 }
 
 /* Заголовок сайта */
@@ -127,6 +129,8 @@ main {
 .programm-one-header {
 	display: flex;
 	justify-content: space-between;
+	margin-left: 60px;
+	flex-wrap: wrap;
 }
 
 .programm-one-description {
@@ -171,6 +175,11 @@ main {
 	color: var(--color-black);
 }
 
+.programm-one-image {
+	padding: 10px;
+	margin: 0 auto;
+}
+
 /* Схема работы */
 
 .work-programm-one h3 {
@@ -198,10 +207,11 @@ main {
 
 .programm-one-shema-items {
 	max-width: 345px;
+	width: 100%;
 	height: 175px;
 	border: 1px solid var(--color-blue);
 	border-radius: 10px;
-	margin-bottom: 45px;
+	margin: 0 10px 45px 10px;
 	position: relative;
 }
 
@@ -248,7 +258,8 @@ main {
 
 .programm-one-features {
 	max-width: 750px;
-	margin-left: 70px;
+	margin-left: 150px;
+	margin-right: 100px;
 }
 
 .programm-one-features h3 {
@@ -263,6 +274,7 @@ main {
 
 .programm-one-features ul li {
 	margin-left: 80px;
+	margin-right: 120px;
 	list-style-type: none;
 	position: relative;
 	padding-left: 40px;
@@ -294,18 +306,21 @@ main {
 .programm-one-features-conditions {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	margin-top: 50px;
 }
 
 .programm-one-features-conditions-description h3 {
 	color: var(--color-blue);
 	margin-left: 40px;
+	text-align: center;
 }
 
 .programm-one-features-conditions-description ul {
 	color: var(--color-black);
 	margin-left: 125px;
 	margin-top: 40px;
+	margin-right: 125px;
 }
 
 .programm-one-features-conditions-description ul li {
@@ -334,7 +349,6 @@ main {
 .programm-one-features-conditions-img img {
 	width: 480px;
 	height: 210px;
-	margin-right: 100px;
 	margin-top: 70px;
 }
 
@@ -373,9 +387,14 @@ main {
 	font-size: 16px;
 	color: var(--color-grey);
 	padding-left: 15px;
+	margin-right: 55px;
 	height: 50px;
 	width: 300px;
 	border: 2px solid var(--color-grey);
+}
+
+.programm-one-form input:nth-child(2) {
+	margin-right: 55px;
 }
 
 .programm-one-form input:focus {
@@ -390,6 +409,10 @@ main {
 	border: 2px solid var(--color-blue);
 	color: var(--color-blue);
 	padding-right: 50px;
+	background-color: white;
+	background-image: url('/img/icon-telegram1.png');
+	background-position: 15px;
+	margin-top: 10px;
 }
 
 /* Граница */
@@ -405,8 +428,715 @@ main {
 	width: 70px;
 	height: 70px;
 	position: absolute;
-	margin-left: 48%;
+	margin-left: 47%;
 	top: -33px;
 	padding: 20px;
 	background-color: var(--color-white);
+}
+
+/* Программа 2 */
+
+.programm-two-head {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 60px;
+	flex-wrap: wrap;
+}
+
+.programm-two-head-description {
+	margin: 0 auto;
+	padding-right: 10px;
+}
+
+.programm-two-name {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: var(--color-grey);
+	margin-bottom: 15px;
+}
+
+.programm-two-exclusive {
+	color: var(--color-orange);
+	font-family: 'TahomaRegular';
+	margin-bottom: 10px;
+}
+
+.programm-two-head-description h2 {
+	font-family: 'TahomaRegular';
+	max-width: 350px;
+	color: var(--color-black);
+	margin-bottom: 25px;
+}
+
+.programm-two-exclusive-description {
+	font-size: 18px;
+	text-transform: uppercase;
+	display: block;
+	max-width: 620px;
+	color: var(--color-black);
+}
+
+.programm-two-exclusive-description span {
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 18px;
+	text-transform: none;
+	color: var(--color-black);
+}
+
+.programm-two-head-img {
+	margin: 0 auto;
+}
+
+.programm-two-head-img img {
+	padding-top: 100px;
+	padding-right: 10px;
+}
+
+/* Схема работы программы №2 */
+
+.work-programm-two h3 {
+	max-width: 895px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	color: var(--color-orange);
+	margin-left: 60px;
+}
+
+.work-programm-two h3 span {
+	display: block;
+	color: var(--color-grey);
+	font-size: 26px;
+	margin-top: 20px;
+}
+
+.work-programm-two-sheme {
+	display: block;
+	max-width: 390px;
+	margin: 15px 0 25px 60px;
+	color: var(--color-grey);
+	text-transform: uppercase;
+}
+
+.programm-two-schema-work {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.programm-two-shema-items {
+	max-width: 345px;
+	width: 100%;
+	height: 175px;
+	border: 1px solid var(--color-orange);
+	border-radius: 10px;
+	margin-bottom: 45px;
+	position: relative;
+}
+
+.programm-two-shema-items p {
+	font-size: 17px;
+	max-width: 300px;
+	text-align: left;
+	display: block;
+	text-transform: none;
+	color: var(--color-black);
+}
+
+.programm-two-shema-items p:nth-child(even) {
+	max-width: 300px;
+	font-family: 'TahomaRegular';
+	margin-left: 47px;
+	margin-right: 20px;
+	margin-top: 25px;
+}
+
+.programm-two-shema-items p:nth-child(odd) {
+	max-width: 215px;
+	margin-left: 47px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+.programm-two-shema-items span {
+	position: absolute;
+	top: 5px;
+	left: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 55px;
+	color: var(--color-orange);
+}
+
+.programm-two-shema-items img {
+	position: absolute;
+	width: 75px;
+	bottom: 10px;
+	right: 10px;
+}
+
+.service {
+	padding-top: 25px;
+}
+
+/* Предложение второй программы */
+
+.programm-two-sentence {
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 35px;
+	color: var(--color-black);
+}
+
+.programm-two-sentence p:nth-child(2) {
+	font-size: 24px;
+	padding-top: 30px;
+	color: var(--color-orange);
+}
+
+.programm-two-sentence p:nth-child(3) {
+	text-transform: uppercase;
+	font-size: 24px;
+	padding-top: 30px;
+	color: var(--color-grey);
+}
+
+/* Форма */
+
+.programm-two-form {
+	margin-top: 30px;
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+.programm-two-form input {
+	font-family: 'TahomaRegular';
+	font-size: 16px;
+	color: var(--color-grey);
+	padding-left: 15px;
+	margin-right: 55px;
+	height: 50px;
+	width: 300px;
+	border: 2px solid var(--color-grey);
+}
+
+.programm-two-form input:nth-child(2) {
+	margin-right: 55px;
+}
+
+.programm-two-form input:focus {
+	outline: none;
+}
+
+.programm-two-form button {
+	font-size: 18px;
+	text-transform: uppercase;
+	height: 50px;
+	width: 300px;
+	border: 2px solid var(--color-orange);
+	color: var(--color-orange);
+	padding-right: 50px;
+	background-color: white;
+	background-image: url('/img/icon-telegram2.png');
+	background-repeat: no-repeat;
+	background-position: 235px;
+	margin-top: 10px;
+}
+
+.programm-two-features {
+	max-width: 750px;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.programm-two-features h3 {
+	color: var(--color-orange);
+	margin-bottom: 25px;
+}
+
+.programm-two-features h3 span {
+	color: var(--color-orange);
+	margin-bottom: 15px;
+	display: block;
+	text-transform: uppercase;
+}
+
+.programm-two-features p {
+	text-transform: uppercase;
+	color: var(--color-black);
+}
+
+.programm-two-features ul li {
+	margin-left: 80px;
+	list-style-type: none;
+	position: relative;
+	padding-left: 40px;
+	margin-top: 25px;
+}
+
+.programm-two-features ul li::before {
+	content: '';
+	background-image: url("img/mark.png");
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	background-size: cover;
+	left: 0px;
+	top: 5px;
+}
+
+.programm-two-features ul li p {
+	text-transform: none;
+	font-size: 20px;
+}
+
+.programm-two-features ul li p:nth-child(even) {
+	font-family: 'TahomaRegular';
+}
+
+/* Условия выкупа квартиры */
+
+.programm-two-features-conditions {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+	flex-wrap: wrap;
+}
+
+.programm-two-features-conditions-description h3 {
+	color: var(--color-orange);
+	margin-left: 40px;
+}
+
+.programm-two-features-conditions-description ul {
+	color: var(--color-black);
+	margin-left: 125px;
+	margin-right: 125px;
+	margin-top: 40px;
+}
+
+.programm-two-features-conditions-description ul li {
+	list-style-type: none;
+	position: relative;
+	padding-left: 20px;
+}
+
+.programm-two-features-conditions-description ul li::before {
+	content: '';
+	background-color: var(--color-orange);
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	position: absolute;
+	left: 0px;
+	top: 8px;
+}
+
+.programm-two-features-conditions-description ul li p {
+	font-size: 20px;
+	font-family: 'TahomaRegular';
+	padding-bottom: 10px;
+}
+
+.programm-two-features-conditions-img img {
+	width: 480px;
+	height: 210px;
+	margin-right: 10px;
+	margin-top: 70px;
+}
+
+/* Контакты */
+
+.contacts {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.question {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: rgb(51, 51, 51);
+}
+
+.question-proggramm {
+	font-size: 20px;
+	font-family: 'TahomaRegular';
+	color: rgb(51, 51, 51);
+}
+
+.contacts-section {
+	display: flex;
+	justify-content: space-between;
+	max-width: 410px;
+	margin: 15px auto 0;
+}
+
+.contacts-image p {
+	font-size: 10px;
+}
+
+.contacts-image p:nth-child(3) {
+	font-size: 8px;
+	font-family: 'TahomaRegular';
+}
+
+.contacts-info {
+	text-align: left;
+	margin-left: 15px;
+	margin-top: 20px;
+}
+
+.contacts-info p {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: var(--color-orange);
+}
+
+.contacts-info p span {
+	font-size: 12px;
+	font-family: 'TahomaRegular';
+	display: block;
+	color: var(--color-black);
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/* Программа 3 */
+
+.programm-three-head {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 60px;
+	flex-wrap: wrap;
+}
+
+.programm-three-head-description {
+	margin: 0 auto;
+}
+
+.programm-three-name {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: var(--color-grey);
+	margin-bottom: 15px;
+}
+
+.programm-three-exclusive {
+	color: var(--color-green);
+	margin-bottom: 10px;
+}
+
+.programm-three-head-description h2 {
+	font-family: 'TahomaRegular';
+	font-size: 36px;
+	max-width: 380px;
+	color: var(--color-black);
+	margin-bottom: 20px;
+}
+
+.programm-three-head-description h2 span {
+	font-size: 36px;
+}
+
+.programm-three-exclusive-description {
+	font-size: 18px;
+	font-family: 'TahomaRegular';
+	display: block;
+	max-width: 500px;
+	color: var(--color-black);
+}
+
+.programm-three-exclusive-description span {
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-family: 'TahomaRegular';
+	text-transform: none;
+	color: var(--color-black);
+}
+
+.programm-three-exclusive-description span:nth-child(2) {
+	text-transform: uppercase;
+}
+
+.programm-three-head-img {
+	margin: 0 auto;
+}
+
+.programm-three-head-img img {
+	padding-top: 50px;
+	padding-right: 10px;
+}
+
+/* Схема работы программы №3 */
+
+.work-programm-three h3 {
+	max-width: 895px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	color: var(--color-green);
+	margin-left: 60px;
+}
+
+.work-programm-three h3 span {
+	display: block;
+	color: var(--color-grey);
+	font-size: 26px;
+	margin-top: 20px;
+}
+
+.work-programm-three-sheme {
+	display: block;
+	max-width: 390px;
+	margin: 15px 0 25px 60px;
+	color: var(--color-grey);
+	text-transform: uppercase;
+}
+
+.programm-three-schema-work {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.programm-three-shema-items {
+	max-width: 345px;
+	width: 100%;
+	height: 175px;
+	border: 1px solid var(--color-green);
+	border-radius: 10px;
+	margin-bottom: 45px;
+	position: relative;
+}
+
+.programm-three-shema-items p {
+	font-size: 17px;
+	max-width: 300px;
+	text-align: left;
+	display: block;
+	text-transform: none;
+	color: var(--color-black);
+}
+
+.programm-three-shema-items p:nth-child(even) {
+	max-width: 300px;
+	font-family: 'TahomaRegular';
+	margin-left: 47px;
+	margin-right: 20px;
+	margin-top: 25px;
+}
+
+.programm-three-shema-items p:nth-child(odd) {
+	max-width: 215px;
+	margin-left: 47px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+.programm-three-shema-items span {
+	position: absolute;
+	top: 5px;
+	left: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 55px;
+	color: var(--color-green);
+}
+
+.programm-three-shema-items img {
+	position: absolute;
+	width: 75px;
+	bottom: 10px;
+	right: 10px;
+}
+
+/* Условия выкупа квартиры */
+
+.programm-three-features-conditions {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.programm-three-features-conditions-description h3 {
+	color: var(--color-green);
+	margin-left: 40px;
+}
+
+.programm-three-features-paragraph {
+	font-size: 26px;
+	margin-top: 15px;
+	margin-left: 40px;
+}
+
+.programm-three-features-conditions-description {
+	margin: 0 auto;
+}
+
+.programm-three-features-conditions-description ul {
+	color: var(--color-black);
+	margin-left: 125px;
+	margin-top: 40px;
+	margin-right: 140px;
+}
+
+.programm-three-features-conditions-description ul li {
+	list-style-type: none;
+	position: relative;
+	padding-left: 20px;
+	max-width: 550px;
+}
+
+.programm-three-features-conditions-description ul li::before {
+	content: '';
+	background-color: var(--color-green);
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	position: absolute;
+	left: 0px;
+	top: 8px;
+}
+
+.programm-three-features-conditions-description ul li p {
+	font-size: 18px;
+	font-family: 'TahomaRegular';
+}
+
+.programm-three-features-conditions-description ul li .programm-three-features-sentence {
+	font-family: 'TahomaSemibold';
+	padding-bottom: 10px;
+}
+
+.programm-three-features-conditions-img {
+	margin: 0 auto;
+}
+
+.programm-three-features-conditions-img img {
+	width: 380px;
+	height: 337px;
+	padding-right: 80px;
+	padding-top: 60px;
+}
+
+/* Предложение третьей программы */
+
+.programm-three-sentence {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 35px;
+	color: var(--color-black);
+}
+
+.programm-three-sentence p:nth-child(2) {
+	color: var(--color-green);
+}
+
+/* Форма */
+
+.programm-three-form {
+	margin-top: 30px;
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+.programm-three-form input {
+	font-family: 'TahomaRegular';
+	font-size: 16px;
+	color: var(--color-grey);
+	padding-left: 15px;
+	margin-right: 55px;
+	height: 50px;
+	width: 300px;
+	border: 2px solid var(--color-grey);
+}
+
+.programm-three-form input:nth-child(2) {
+	margin-right: 55px;
+}
+
+.programm-three-form input:focus {
+	outline: none;
+}
+
+.programm-three-form button {
+	font-size: 18px;
+	text-transform: uppercase;
+	height: 50px;
+	width: 300px;
+	border: 2px solid var(--color-green);
+	color: var(--color-green);
+	padding-right: 50px;
+	background-color: white;
+	background-image: url('/img/icon-telegram3.png');
+	background-repeat: no-repeat;
+	background-position: 235px;
+	margin-top: 10px;
+}
+
+.programm-three-features {
+	max-width: 1000px;
+	margin-left: 150px;
+	margin-right: 110px;
+}
+
+.programm-three-features h3 {
+	color: var(--color-green);
+	margin-bottom: 10px;
+}
+
+.programm-three-features p {
+	text-transform: uppercase;
+	color: var(--color-black);
+}
+
+.programm-three-features ul li {
+	margin-left: 80px;
+	margin-right: 160px;
+	list-style-type: none;
+	position: relative;
+	padding-left: 40px;
+	margin-top: 25px;
+}
+
+.programm-three-features ul li::before {
+	content: '';
+	background-image: url("img/mark.png");
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	background-size: cover;
+	left: 0px;
+	top: 5px;
+}
+
+.programm-three-features ul li p {
+	text-transform: none;
+	font-size: 20px;
+}
+
+.programm-three-features ul li p:nth-child(even) {
+	font-family: 'TahomaRegular';
+}
+
+.info {
+	margin: 30px auto 0;
+	max-width: 600px;
+	text-align: center;
+}
+
+.info h2 {
+	font-size: 20px;
+	color: var(--color-green);
+}
+
+.contacts-programm-three p {
+	color: var(--color-green);
 }
