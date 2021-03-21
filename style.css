@@ -88,7 +88,7 @@ main {
 	width: 100%;
 }
 
-.header-cite h1 {
+.header-cite h2 {
 	text-align: center;
 	text-transform: uppercase;
 	margin-top: 30px;
@@ -1212,6 +1212,9 @@ main {
 		flex-direction: column;
 		align-items: center;
 	}
+	.item-section-nav {
+		margin-right: 10px;
+	}
 	.programm-one {
 		flex-direction: column;
 	}
@@ -1368,5 +1371,114 @@ main {
 	}
 	.programm-three-form button {
 		background-position: 250px;
+	}
+	.contacts {
+		padding: 5px;
+	}
+}
+
+@media (max-width: 500px) {
+	body {
+		max-width: 400px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.programm-one-image img {
+		max-width: 280px;
+	}
+	.header-cite {
+		padding: 0 5px 0 5px;
+	}
+	.programm-one-header {
+		padding: 0 5px 0 5px;
+	}
+	.programm-one-image {
+		padding: 0 5px 0 5px;
+	}
+	.programm-one-shema-items {
+		margin: 0 auto 10px;
+		padding: 0;
+		max-width: 280px;
+		min-height: 220px;
+	}
+	.programm-one-shema-items img {
+		width: 50px;
+		bottom: 5px;
+	}
+	.programm-one-features ul {
+		padding: 0 0 0 5px;
+	}
+	.programm-one-features ul li {
+		padding: 0 0 0 10px;
+	}
+	.programm-one-features-conditions-description ul {
+		padding-left: 5px;
+		margin: 0 auto;
+	}
+	.border img {
+		margin-left: 40%;
+	}
+	.programm-two-shema-items {
+		margin: 0 auto 10px;
+		padding: 0;
+		max-width: 280px;
+		min-height: 240px;
+	}
+	.programm-two-shema-items img {
+		width: 50px;
+		bottom: 5px;
+	}
+	.programm-two-features ul {
+		padding: 0 0 0 5px;
+	}
+	.programm-two-features ul li {
+		padding: 0 0 0 40px;
+	}
+	.programm-two-features-conditions-description h3 {
+		padding-left: 10px;
+	}
+	.programm-two-features-conditions-description ul {
+		padding-left: 5px;
+		margin: 0 auto;
+	}
+	.contacts-info p {
+		font-size: 18px;
+	}
+	.programm-three-head-img img {
+		max-width: 280px;
+	}
+	.programm-three-shema-items {
+		margin: 0 auto 10px;
+		padding: 0;
+		max-width: 280px;
+		min-height: 240px;
+	}
+	.programm-three-shema-items img {
+		width: 50px;
+		bottom: 5px;
+	}
+	.programm-three-features-conditions-description {
+		max-width: 300px;
+	}
+	.programm-three-features-conditions-description h3 {
+		max-width: 240px;
+		margin-left: 10px;
+	}
+	.programm-three-features-paragraph {
+		margin: 0 auto 0;
+		max-width: 280px;
+	}
+	.programm-three-features-conditions-description ul {
+		padding-left: 5px;
+		margin: 0 auto;
+	}
+	.programm-three-features-conditions-img img {
+		max-width: 280px;
+	}
+	.programm-three-features ul {
+		padding: 0 0 0 5px;
+	}
+	.programm-three-features ul li {
+		padding: 0 0 0 40px;
 	}
 }
