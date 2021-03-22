@@ -38,6 +38,7 @@
 }
 
 * {
+	scroll-behavior: smooth;
 	padding: 0;
 	margin: 0;
 	-webkit-box-sizing: border-box;
@@ -62,7 +63,7 @@ main {
 	justify-content: space-around;
 }
 
-.item-section-nav {
+.section-nav .item-section-nav {
 	margin-top: 25px;
 	max-width: 300px;
 	width: 100%;
@@ -73,21 +74,46 @@ main {
 	border: 1px solid var(--color-blue);
 	text-transform: uppercase;
 	margin-left: 10px;
+	cursor: pointer;
 }
 
-.item-section-nav:nth-child(2) {
+.section-nav .item-section-nav:nth-child(2) {
 	border: 1px solid var(--color-orange);
 	color: var(--color-orange);
 	padding-right: 18px;
 	padding-left: 18px;
 }
 
-.item-section-nav:nth-child(3) {
+.section-nav .item-section-nav:nth-child(3) {
 	border: 1px solid rgb(91, 173, 132);
 	color: rgb(91, 173, 132);
 	padding-right: 20px;
 	padding-left: 20px;
 	margin-right: 10px;
+}
+
+#ancor-one {
+	text-decoration: none;
+	color: var(--color-blue);
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+}
+
+#ancor-two {
+	text-decoration: none;
+	color: var(--color-orange);
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+}
+
+#ancor-three {
+	text-decoration: none;
+	color: rgb(91, 173, 132);
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
 }
 
 /* Заголовок сайта */
@@ -379,7 +405,6 @@ main {
 
 .programm-one-features-conditions-img img {
 	width: 480px;
-	height: 210px;
 	margin-top: 70px;
 }
 
@@ -444,6 +469,7 @@ main {
 	background-image: url('/img/icon-telegram1.png');
 	background-position: 15px;
 	margin-top: 10px;
+	cursor: pointer;
 }
 
 /* Граница */
@@ -684,6 +710,7 @@ main {
 	background-repeat: no-repeat;
 	background-position: 235px;
 	margin-top: 10px;
+	cursor: pointer;
 }
 
 .programm-two-features {
@@ -787,7 +814,6 @@ main {
 
 .programm-two-features-conditions-img img {
 	width: 480px;
-	height: 210px;
 	margin-right: 10px;
 	margin-top: 70px;
 }
@@ -1081,7 +1107,6 @@ main {
 
 .programm-three-features-conditions-img img {
 	width: 380px;
-	height: 337px;
 	padding-right: 80px;
 	padding-top: 60px;
 }
@@ -1140,6 +1165,7 @@ main {
 	background-repeat: no-repeat;
 	background-position: 235px;
 	margin-top: 10px;
+	cursor: pointer;
 }
 
 .programm-three-features {
